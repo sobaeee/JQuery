@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JQuery17</title>
+<!-- 스크립트 -->
+<!-- <script src="jquery-3.6.0.min.js"></script> -->
+<!-- 다운로드해서 사용하는 방법 -->
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<!-- 주소로 사용하는 방법 -->
+</head>
+<body>
+	<input type="text" name="" id="txt" class="">
+	<input type="radio" name="ra" id="ra1" class="">
+	<input type="radio" name="ra" id="ra2" class="">
+	<input type="checkbox" name="cb" id="cb" class="">
+	<select name="" id="sel" class="">
+		<option value="op1">옵션1</option>
+		<option value="op2">옵션2</option>
+		<option value="op3">옵션3</option>
+	</select>
+	<select id="subsel"></select>
+	<button id="submit">값 체크</button>
+	<!-- 스크립트 -->
+	<script>
+		$(document).ready(function() {
+			
+			$("#sel option:eq(1)").prop("selected", true);
+			
+			$("#sel").change(function() {
+				$("#subsel").empty();
+				
+				
+				if ($("#sel").val() == 'op2') {
+					$("#subsel").append("<option>서브Select</option>");
+				} else if ($("#sel").val() == 'op3') {
+					$("#subsel").append("<option>서브3Select</option>");
+				} 
+				
+				console.log("aaaaa");
+			});
+
+			$("#submit").click(function() {
+				console.log($("#sel option:selected").text());
+				//console.log($("#cb").prop("checked"));
+				//console.log($("#ra1").prop("checked"));
+			});
+		});
+	</script>
+</body>
+</html>

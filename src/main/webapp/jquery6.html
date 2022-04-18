@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JQuery6</title>
+<!-- 스크립트 -->
+<!-- <script src="jquery-3.6.0.min.js"></script> --> 
+<!-- 다운로드해서 사용하는 방법 -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<!-- 주소로 사용하는 방법 -->
+</head>
+<body>
+<button>나를 클릭하세요.</button>
+<p>toggle : 사라졌다 나타났다 합니다.</p>
+
+<!-- 스크립트 -->
+<script>
+$(document).ready(function(){
+	$("button").on("click", function(){
+		/* .click(function(){}) 도 가능.  */
+		//$(this).hide();
+		$("p").toggle(1000);
+	});
+});
+</script>
+</body>
+</html>

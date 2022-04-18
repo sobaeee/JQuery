@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JQuery16</title>
+<!-- 스크립트 -->
+<!-- <script src="jquery-3.6.0.min.js"></script> -->
+<!-- 다운로드해서 사용하는 방법 -->
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<!-- 주소로 사용하는 방법 -->
+</head>
+<body>
+	<input type="text" name="" id="txt" class="">
+	<button id="submit">값 체크</button>
+	<!-- 스크립트 -->
+	<script>
+		$(document).ready(function() {
+			$("#submit").click(function() {
+				//var txt = $("#txt").val();
+				var txt = document.getElementById("txt").value;
+				if (txt == '') {
+			// if ($(txt).val() == '') {    사용시 콘솔 창에=> txt 대신 $(txt).val()을 기입 
+					console.log("빈값입니다.");
+				} else {
+					console.log("값 : " + txt);
+				}
+			});
+		});
+	</script>
+</body>
+</html>

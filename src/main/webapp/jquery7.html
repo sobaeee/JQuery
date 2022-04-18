@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JQuery7</title>
+<!-- 스크립트 -->
+<!-- <script src="jquery-3.6.0.min.js"></script> --> 
+<!-- 다운로드해서 사용하는 방법 -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<!-- 주소로 사용하는 방법 -->
+</head>
+<body>
+<button>나를 클릭하세요.</button>
+<div id = "div1" style="display:none">id = div1</div>
+<div id = "div2" style="display:none">id = div2</div>
+<div id = "div3" style="display:none">id = div3</div>
+
+
+<!-- 스크립트 -->
+<script>
+$(document).ready(function(){
+	$("button").on("click", function(){
+		$("#div1").fadeIn();
+		$("#div2").fadeIn("slow");
+		$("#div3").fadeIn(3000);
+	});
+});
+</script>
+</body>
+</html>

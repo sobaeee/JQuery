@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JQuery14</title>
+<!-- 스크립트 -->
+<!-- <script src="jquery-3.6.0.min.js"></script> --> 
+<!-- 다운로드해서 사용하는 방법 -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<!-- 주소로 사용하는 방법 -->
+</head>
+<body>
+<div id="test"><h1>제목</h1></div>
+<input id="test2"/>
+<hr>
+<a href="https://www.w3schools.com" title="w3schools">w3schools</a>
+<hr>
+<button id="btn1">html()</button>
+<button id="btn2">text()</button>
+<button id="btn3">val()</button>
+<button id="btn4">attr()</button>
+
+<!-- 스크립트 -->
+<script>
+$(document).ready(function(){
+	$("#btn1").click(function (){
+		var html = $("#test").html();
+		console.log("btn1: "+html);
+	});
+	
+	$("#btn2").click(function (){
+		var text = $("#test").text();
+		console.log("btn2: "+text);
+	});
+	
+	$("#btn3").click(function (){
+		var val = $("#test2").val();
+		console.log("btn3: "+val);
+	});
+	
+	$("#btn4").click(function (){
+		var attr = $("a").attr("title");
+		console.log("btn4: "+attr);
+	});
+});
+//title을 넣으면 w2chools가 뜨고 href를 넣으면 주소가 뜬다. 속성을 어떤 것을 넣느냐의 차이.
+</script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JQuery12</title>
+<!-- 스크립트 -->
+<!-- <script src="jquery-3.6.0.min.js"></script> --> 
+<!-- 다운로드해서 사용하는 방법 -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<!-- 주소로 사용하는 방법 -->
+</head>
+<body>
+<button style="margin:10px">애니메이션 시작</button>
+<div style="background:#98bf21;height:100px;width:100px;position:absolute;"></div>
+
+
+<!-- 스크립트 -->
+<script>
+$(document).ready(function(){
+	$("button").click(function (){
+		$("div").animate({left:'250px'});
+	});
+});
+</script>
+</body>
+</html>

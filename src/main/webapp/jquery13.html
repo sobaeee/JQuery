@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JQuery13</title>
+<!-- 스크립트 -->
+<!-- <script src="jquery-3.6.0.min.js"></script> --> 
+<!-- 다운로드해서 사용하는 방법 -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<!-- 주소로 사용하는 방법 -->
+</head>
+<body>
+<p>코로나 조심하세요.</p>
+<p class="p">코로나 조심하세요2.</p>
+<p id="p">코로나 조심하세요3.</p>
+
+
+<!-- 스크립트 -->
+<script>
+//$("#p").hide();
+$(document).ready(function (){
+	$("p").hide(3000, function (){
+		alert("^^");
+	});
+});
+</script>
+</body>
+</html>
