@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>JQuery14</title>
+<title>JQuery14-1</title>
 <!-- 스크립트 -->
 <!-- <script src="jquery-3.6.0.min.js"></script> --> 
 <!-- 다운로드해서 사용하는 방법 -->
@@ -39,7 +39,9 @@ $(document).ready(function(){
 	});
 	
 	$("#btn4").click(function (){
-		var attr = $("a").attr("title");
+		var attr = $("a").attr({
+			"href" : "https://www.naver.com",
+		"title" : "W3s"});
 		console.log("btn4: "+attr);
 	});
 	//$("a") => "a" :앵커태그.
